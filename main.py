@@ -1,7 +1,6 @@
 from tkinter.ttk import Combobox
 import qrcode as qr
 from tkinter import *
-from tkinter import colorchooser
 
 win = Tk()
 window_height = 350
@@ -15,10 +14,6 @@ out_var = StringVar()
 colour_var = StringVar()
 colour_bg_var = StringVar()
 qr = qr.QRCode(version = 1, box_size = 10, border = 5)
-
-def colourchooser():
-    global colour_var
-    colour_var = colorchooser.askcolor()[1]
 
 def save_btn_func():
     qr.add_data(url_var.get())
@@ -58,9 +53,6 @@ out_label = Label(win, text='Output File Name', font=('calibre',15,'bold'))
 out_label.grid(row=4, column=1, padx=10, pady=10)
 output_file_name = Entry(win, width=40,textvariable=out_var, font=('calibre',10,'italic'), bd=3)
 output_file_name.grid(row=4, column=2, padx=10, pady=10)
-
-testbtn = Button(win, text='Ok', command=colourchooser)
-testbtn.grid(row=6, column=1)
 
 # Save button
 save_btn = Button(win, text='Save Image', font=('calibre',10,'bold'), command=save_btn_func)
