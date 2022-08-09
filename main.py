@@ -34,7 +34,7 @@ clr_select_lbl.grid(row=2, column=1, pady=10, padx=10)
 
 choose_colour = Combobox(win, textvariable = colour_var)
 choose_colour.set('Black')
-choose_colour['values'] = ('White' ,'Black', 'Red', 'Green', 'Blue', 'Grey')
+choose_colour['values'] = ('Black', 'White', 'Red', 'Green', 'Blue', 'Grey')
 choose_colour['state'] = 'readonly'
 choose_colour.grid(row=2, column=2, padx=10, pady=10)
 
@@ -43,7 +43,7 @@ clr_select_lbl_bg = Label(win, text='Select QRcode BG Colour - ')
 clr_select_lbl_bg.grid(row=3, column=1, pady=10, padx=10)
 
 choose_colour_bg = Combobox(win, textvariable = colour_bg_var)
-choose_colour_bg.set('Black')
+choose_colour_bg.set('White')
 choose_colour_bg['values'] = ('White', 'Black', 'Red', 'Green', 'Blue', 'Grey')
 choose_colour_bg['state'] = 'readonly'
 choose_colour_bg.grid(row=3, column=2, padx=10, pady=10)
