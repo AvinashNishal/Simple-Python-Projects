@@ -8,6 +8,6 @@
 
 ```pip install qrcode```
 
-##Features
+## Features
 -Change colour of QR Code
 -Change background colour of QR Code
