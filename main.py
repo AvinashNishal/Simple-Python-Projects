@@ -18,8 +18,8 @@ qr = qr.QRCode(version = 1, box_size = 10, border = 5)
 def save_btn_func():
     qr.add_data(url_var.get())
     qr.make(fit = True)
-    img = qr.make_image(fill_color = colour_var,
-                        back_color = colour_bg_var.get)
+    img = qr.make_image(fill_color = colour_var.get(),
+                        back_color = colour_bg_var.get())
     img.save(f'{out_var.get()}.png')
 
 # URL
