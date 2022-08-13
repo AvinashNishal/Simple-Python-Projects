@@ -1,7 +1,7 @@
 # GUI QRcode GeneratorPy
 
-## A GUI QRcode generator made with python and tkinter
-## Create Completely Customizable QR Codes
+- ### A GUI QRcode generator made with python and tkinter
+- ### Create Completely Customizable QR Codes
 
 ## Dependencies
 - qrcode
