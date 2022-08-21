@@ -28,7 +28,7 @@ target_label.grid(row=1, column=1, padx=10, pady=10)
 url_entry = Entry(win, width=40,textvariable=url_var, font=('calibre',10,'italic'), bd=3)
 url_entry.grid(row=1, column=2, padx=5, pady=10)
 
-# URL Colour Selector
+# QR Colour Selector
 clr_select_lbl = Label(win, text='Select QRcode Colour - ')
 clr_select_lbl.grid(row=2, column=1, pady=10, padx=10)
 
@@ -38,7 +38,7 @@ choose_colour['values'] = ('Black', 'White', 'Red', 'Green', 'Blue', 'Grey')
 choose_colour['state'] = 'readonly'
 choose_colour.grid(row=2, column=2, padx=10, pady=10)
 
-# URL Bg Selector
+# QR Bg Selector
 clr_select_lbl_bg = Label(win, text='Select QRcode BG Colour - ')
 clr_select_lbl_bg.grid(row=3, column=1, pady=10, padx=10)
 
